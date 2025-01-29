@@ -18,5 +18,4 @@ router.get("/private-cookies", [passportCall('jwtCookies'), roleAuth('user')], u
 router.get("/private-cookies-admin", [passportCall('jwtCookies'), roleAuth('admin')], userController.privateData);
 
 
-
 export default router;
